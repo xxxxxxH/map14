@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/outDoor"
+            android:icon="@drawable/ic_star"
+            android:title="OUTDOOR" />
+
+        <item
+            android:id="@+id/satellite"
+            android:icon="@drawable/ic_star"
+            android:title="SATELLITE" />
+
+        <item
+            android:id="@+id/light"
+            android:icon="@drawable/ic_star"
+            android:title="LIGHT" />
+
+        <item
+            android:id="@+id/traffic"
+            android:icon="@drawable/ic_star"
+            android:title="TRAFFIC DAY" />
+
+        <item
+            android:id="@+id/nearby"
+            android:icon="@drawable/ic_star"
+            android:title="Nearby" />
+
+        <item
+            android:id="@+id/inter"
+            android:icon="@drawable/ic_star"
+            android:title="Interactive" />
+
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_star"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/ic_star"
+            android:title="Rate Us" />
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_star"
+            android:title="Share" />
+    </group>
+</menu>

@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "fire.faker.tes"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 10086
+        versionName "10086.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.mapbox.maps:android:10.2.0'
+    implementation "com.mapbox.search:mapbox-search-android-ui:1.0.0-beta.25"
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-annotation-v7:0.6.0'
+    implementation "com.google.android.gms:play-services-location:19.0.1"
+    implementation 'gov.nasa.worldwind.android:worldwind:0.8.0'
+    implementation 'com.github.getActivity:XXPermissions:13.5'
+    implementation 'com.roger.catloadinglibrary:catloadinglibrary:1.0.9'
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Odders</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoibG9rMSIsImEiOiJja3lqeHdxZnEyOGhmMm9xcHRwanI5ZHBqIn0.qn8oH018oulkBu6VESnJ1A</string>
+    <string name="share_app_msg">Hi! I\'m using a fabulous map application. Just try it.</string>
+</resources>
