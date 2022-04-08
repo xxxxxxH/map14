@@ -30,6 +30,7 @@ public class NetPage1 extends BasicsPage implements NetCallback{
     @Override
     void initView() {
         recycler = findViewById(R.id.recycler);
+        showLoading();
         CommonUtils.getInstance().getNet1Data(this);
     }
 
@@ -57,11 +58,14 @@ public class NetPage1 extends BasicsPage implements NetCallback{
             i.putExtra("data", dataEntity);
             startActivity(i);
         });
+        closeLoading();
     }
 
 
     @Override
     public void onError() {
-
+        closeLoading();
+        CommonUtils.getInstance().showToast(this,"no data");
+        finish();
     }
 }

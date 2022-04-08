@@ -24,6 +24,7 @@ public class NetPage2 extends BasicsPage implements NetCallback {
 
     @Override
     void initView() {
+        showLoading();
         DataEntity dataEntity = (DataEntity) getIntent().getSerializableExtra("data");
         String url = "https://www.google.com/streetview/feed/gallery/collection/" + dataEntity.getKey() + ".json";
         mapView = findViewById(R.id.mapView);
@@ -58,10 +59,13 @@ public class NetPage2 extends BasicsPage implements NetCallback {
             MapUtils.addMarker(mapView,
                     Point.fromLngLat(Double.parseDouble(entity.getLng()), Double.parseDouble(entity.getLat())));
         });
+        closeLoading();
     }
 
     @Override
     public void onError() {
-
+        closeLoading();
+        CommonUtils.getInstance().showToast(this,"no data");
+        finish();
     }
 }
